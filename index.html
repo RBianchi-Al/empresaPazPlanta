@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Paz & Plantas Jardinagem</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script>
+		function formatar(mascara, documento) {
+			var i = documento.value.length;
+			var saida = mascara.substring(0, 1);
+			var text = mascara.substring(i);
+			if (text.substring(0, 1) != saida) {
+				documento.value += text.substring(0, 1);
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="logo2.png"></h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<img class="banner" src="banner.png">
+
+	<main>
+		<section class="principal">
+			<h2 class="titulo-principal">Sobre a empresa Paz e Plantas</h2>
+
+
+
+			<p>Localizada em Franca/SP, a empresa <strong>Paz & Plantas</strong> está no mercado a cinco anos. Oferece
+				diversos serviços e produtos para tornar
+				sua casa mais harmônica e trazer a natureza para o seu dia a dia.</p>
+			<img class="sobre" src="logo-branco.png" alt="Logo Paz e Plantas">
+			<p id="missao"><em>Nossa missão é: <strong>Trazer a natureza para o dia a dia das pessoas</strong>.</em></p>
+
+		</section>
+
+		<section class="mapa">
+			<h3 class="titulo-principal">Nosso estabelecimento</h3>
+			<p>Localizado no Noêmia, oferecemos serviços em Franca a região</p>
+
+			<div class="mapa-conteudo">
+
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d478641.6516666623!2d-47.52685114610378!3d-20.408112390705092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-20.2771121!2d-47.106983!4m5!1s0x94b0a8c9ff22b4d9%3A0x3a69c86d3f489edf!2spaz%20e%20plantas%20jardinagem%20Franca!3m2!1d-20.559079!2d-47.3756659!5e0!3m2!1spt-BR!2sbr!4v1614792279606!5m2!1spt-BR!2sbr"
+					width="100%" height="300" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+		</section>
+
+		<section class="beneficios">
+			<h3 class="titulo-principal">Benefícios</h3>
+
+			<div class="conteudo-beneficios">
+				<ul class="lista-beneficios">
+					<li class="itens">Atendimento aos Clientes</li>
+					<li class="itens">Espaço diferenciado</li>
+					<li class="itens">Localização</li>
+					<li class="itens">Profissionais Qualificados</li>
+					<li class="itens">Pontualidade</li>
+					<li class="itens">Limpeza</li>
+				</ul><img src="beneficios.jpg" class="imagem-beneficios">
+			</div>
+
+			<!-- <div class="video">
+				<iframe width="560" height="315" src="https://www.youtube.com/watch?v=3Y8F44NrGOQ" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div> -->
+		</section>
+	</main>
+
+	<footer>
+		<img src="logo2.png">
+		<p class="copyright">&copy; Copyright Paz e Plantas Jardinagem - 2021</p>
+	</footer>
+</body>
+
+</html>
