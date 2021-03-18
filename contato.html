@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Orçamento</title>
+	<link rel="stylesheet" href="developer.js">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="logo2.png"></h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<h2 class="orcar">Faça seu orçamento</h2>
+		<form class="formulario">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputEmail4">Nome Completo</label>
+					<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="email">e-mail</label>
+					<input type="email" class="form-control" id="email" placeholder="nome@dominio">
+				</div>
+			</div>
+			<!-- Segunda linha -->
+			<div class="form-group">
+				<label for="inputAddress">Endereço</label>
+				<input type="text" class="form-control" id="inputAddress" placeholder="Rua Alfaiates, nº 5">
+			</div>
+
+			<!-- Quarta linha -->
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputCity">Cidade</label>
+					<input type="text" class="form-control" id="inputCity">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputEstado">Estado</label>
+					<select id="inputEstado" class="form-control">
+						<option selected>Selecione</option>
+						<option>SP</option>
+						<option>MG</option>
+					</select>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputCEP">CEP</label>
+					<input type="text" class="form-control" id="inputCEP">
+				</div>
+			</div>
+
+			</div>
+			<div class="form-group">
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						<label for="textArea">Serviços que possui interesse:</label>
+						<input type="text" class="Textcontrol" id="textArea" placeholder="Poda, manutenção em jardins...">
+					</div>
+				</div>
+			</div>
+			<button type="submit" onclick="Submit()" class="btn btn-primary" id="botaoSubmit">Enviar</button>
+		</form>
+
+	</main>
+
+	<footer>
+		<img src="logo2.png">
+		<p class="copyright">&copy; Copyright Paz e Plantas Jardinagem - 2021</p>
+	</footer>
+</body>
+
+</html>
